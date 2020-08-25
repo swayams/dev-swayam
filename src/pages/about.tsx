@@ -1,6 +1,6 @@
 import { Container } from "@material-ui/core"
 import * as React from 'react';
-import Layout from "../components/layout";
+import Layout from "../components/container/layout";
 
 const About = () => {
     return(

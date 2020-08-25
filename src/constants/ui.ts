@@ -1,3 +1,4 @@
+import { transparent } from "material-ui/styles/colors"
 
 
 const colors = {
@@ -34,11 +35,19 @@ export const ui = {
     },
 
     footer: {
-        color: colors.typography.main,
-        typography: 'Lato san-serif',
+        color: colors.typography.black,
+        
         background: {
             color: colors.typography.white,
             border: colors.typography.second,
+        }
+    },
+
+    header: {
+        color: colors.typography.black,
+        background: {
+            color: 'transparent',
+            border: 'none'
         }
     }
 

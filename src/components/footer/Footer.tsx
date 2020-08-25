@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Grid, Paper } from "@material-ui/core"
+import { Grid, Paper, Divider } from "@material-ui/core"
 import { CSSProperties } from "@material-ui/core/styles/withStyles"
 import { ui } from "./../../constants/ui"
 
@@ -15,8 +15,34 @@ class Footer extends React.Component<IFooterProps, IFooterState> {
   render() {
     return (
       <footer>
-        <Grid container spacing={12} style={footer}>
-         
+        <Grid container style={footer} className="footer">
+          <Grid container direction="row" className="static">
+            <Grid item xs={3}>
+              Lorem
+            </Grid>
+            <Grid item xs={6}>
+              {" "}
+              Copyright 2020. All rights reserved.{" "}
+            </Grid>
+            <Grid item xs={3}>
+              {" "}
+              Ipsum{" "}
+            </Grid>
+          </Grid>
+          <Divider />
+          <Grid container direction="row">
+            <Grid item xs={3}>
+              Lorem
+            </Grid>
+            <Grid item xs={6}>
+              {" "}
+              Copyright 2020. All rights reserved.{" "}
+            </Grid>
+            <Grid item xs={3}>
+              {" "}
+              Ipsum{" "}
+            </Grid>
+          </Grid>
         </Grid>
       </footer>
     )
@@ -30,9 +56,6 @@ const footer: CSSProperties = {
   borderTop: `1px solid ${ui.footer.background.border}`,
   background: ui.footer.background.color,
   color: ui.footer.color,
-  bottom: 0,
-  left: 0,
-  position: "absolute",
-  fontFamily: ui.footer.typography,
- 
+    
+  padding: "10px",
 }

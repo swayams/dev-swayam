@@ -9,11 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from './header/header';
-import { ILink } from './header/nav';
+import Header from '../header/header';
+import { ILink } from '../header/nav';
 import {  Grid, ThemeProvider } from "@material-ui/core";
-import Footer from "./footer/Footer";
-import { theme } from './theme';
+import Footer from "../footer/Footer";
+import { theme } from '../theme';
 
 
 const Layout = ({ children }) => {

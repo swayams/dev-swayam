@@ -21,8 +21,8 @@ const HeroCarousel = () => (
     }}
     images={["c-dandelion.jpg", "c-deer.jpg", "c-pots.jpg"]}
   >
-    {carouselData.map(item => (
-      <Paper variant="outlined" square style={style.content} className="carousel">
+    {carouselData.map((item, index) => (
+      <Paper variant="outlined" square style={style.content} className="carousel" key={index}>
         <div className="carousel-content">
           <h1 style={style.content.title}>{item.title}</h1>
           <div className="sub-title"> { item.description } </div>
